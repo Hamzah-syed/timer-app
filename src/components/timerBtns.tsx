@@ -13,12 +13,13 @@ const TimerBtns: React.FC<timerBtnsPropsType> = ({
     <div className="container">
       <div className="">
         {status === 0 ? (
-          <button className="btn" onClick={startfn}>
+          <button className="btn" onClick={startfn} id="start">
             Start
           </button>
         ) : (
           <div>
             <button
+              id="stop"
               className="btn btn-warning"
               onClick={status === 2 ? resumefn : stopfn}
             >

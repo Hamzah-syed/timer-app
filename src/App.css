@@ -7,7 +7,11 @@
   border-radius: 5px;
   color: #ddd;
 }
-
+@media only screen and (max-width: 768px) {
+  .App {
+    width: 80%;
+  }
+}
 .container {
   max-width: 1200px;
   margin: 0 auto;
