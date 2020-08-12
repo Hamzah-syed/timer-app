@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./App.css";
 import Timer from "./components/timer";
 import TimerBtns from "./components/timerBtns";
+import Random from "./components/random";
 //type
 import { timerState } from "./types/timer_TYPE";
 
@@ -52,6 +53,7 @@ function App() {
   return (
     <div className="App">
       <Timer timer={timer} />
+
       <TimerBtns
         startfn={start}
         stopfn={stop}

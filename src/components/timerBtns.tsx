@@ -13,19 +13,19 @@ const TimerBtns: React.FC<timerBtnsPropsType> = ({
     <div className="container">
       <div className="">
         {status === 0 ? (
-          <button className="btn" onClick={startfn} id="start">
+          <button id="start" className="btn" onClick={startfn}>
             Start
           </button>
         ) : (
           <div>
             <button
-              id="stop"
-              className="btn btn-warning"
+              id="stopResume"
+              className="btn"
               onClick={status === 2 ? resumefn : stopfn}
             >
               {status === 2 ? "Resume" : "Stop"}
             </button>
-            <button className="btn  btn-danger" onClick={resetfn}>
+            <button id="reset" className="btn  btn-danger" onClick={resetfn}>
               Reset
             </button>
           </div>
